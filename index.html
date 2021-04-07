@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practices</title>
+    <meta name="charset" content="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+</head>
+<body>
+    <main id="resources_container">
+        <header>
+            <div class="logo"><img src="/src/img/logo.svg" alt=""></div>
+            <h4>Development Resources</h4>
+        </header>
+        <menu>
+            <button id="getLightBox" class="rsc-button">Lightbox with JavaScript</button>
+            <button id="image-rotator" class="rsc-button">Image Rotator</button>
+            <button id="popup" class="rsc-button">Popup</button>
+            <button id="table" class="rsc-button">Table</button>
+            <button id="registryForm" class="rsc-button">Registration Form</button>
+            <button id="login" class="rsc-button">Login Area</button>
+        </menu>
+        <div class="image-rator" id="imagesContainer" style="display: none;">
+            <img src="rscs/1rst.jpg" alt="" width="400" height="300">
+            <img src="rscs/2nd.png" alt="" width="400" height="300">
+            <img src="rscs/3rst.png" alt="" width="400" height="300">
+        </div>
+        <div class="registration" style="display: none;">
+            <form id="user_registration" class="user_registration">
+                <h4>Formulario de registro</h4>
+                <label>First name:</label>
+                    <input type="text" name="first_name" id="first_name">
+            
+                <label>Last name:</label>
+                    <input type="text" name="first_name" id="last_name">
+            
+                <label>Username:</label>
+                    <input type="text" name="username" id="username">
+            
+                <label>Email:</label>
+                    <input type="text" name="email" id="email">
+            
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <input type="Submit" value="Listo" onclick="enviarForm()"/>
+            </form>
+        </div>
+        <div class="loginArea" style="display: none;"> 
+            <form action="javascript:void(0);" id="loginForm" method="post">
+                <h4>Login Area</h4>
+                <label for="Usuario">
+                    <input type="text" placeholder="Usuario" name="username">
+                </label>
+                <label>
+                    <input type="password" placeholder="**********" name="password">
+                </label>
+                <div class="submit-wrap">
+                    <input type="submit" value="Enter">
+                </div>	
+                <!-- <input type="submit" value="Entrar"> -->
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript">
+        document.querySelector("*").onclick=ev=>{
+            componentsFilter(ev)
+        }
+    </script>
+    <!--N!< ▬. >-->
+    <script type="text/javascript" src="scripts/provider.js"></script>
+    <script type="text/javascript" src="src/route.js"></script>
+    <!--Scripts -->
+    <script type="text/javascript" src="scripts/lightbox.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/image-rotator.js"></script>
+    <script type="text/javascript" src="scripts/table.js"></script>
+    <script type="text/javascript" src="scripts/formulary.js"></script>
+
+
+    <script type="text/javascript" src="libs/sao.js"></script>
+    <script type="text/javascript" src="src/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+-END
+data = anObjectAsAJSON with info AND more OBJECTS inside of IT.
+funciones : > ( parameters "<-*" )
+init (data, callback):
+*variables booleanas*
+// oneclickcomponent = false; itemscomponentSelected = []; showDataActually = [];
+// showOptionComponent4564 = false; activeUsersShowComponent = {};
+
+*variables de declaracion*
+box = document.div;
+space.data = data;
+boxContent = box;
+*pedimos para Luego recibir en su momento indicado luego de que todo en el bloque
+siguiente es cumplido.*
+	promise{
+		/*if(!parent): alert("You must add a container to the table")*/
+		color = data.color; boxContainerAll = document.div; containerTableP = document.div; containerDomSelectUser = document.div; dom = document.style;
+		+_createHeader(box, data) // CREATE HEADER
+		box.classList.add("box-component-table") // CREATE ... **.(.)/+header
+		boxContainerAll.add("box-Container-All-00054")
+		containerTableP.add("container-Table-P-8469")
+		containerDomSelectUser.add("container-Dom-Select-User-2576")
+
+		_createTable(containerTableP, data) 
+		TESTS
+	}
+
+  _createHeader (parent, date):
+	This works in drawing the header.
+
+  _createTable (box, data):
+	depending on the data, the table will change.
+	boxTable = document.div
+	/* if(!data.table): boxTable.classList.add("info-center"); boxTable.innerText = "You are not sending the table parameter"; return */
+	/* if(): boxTable.classList.add("info-center"); boxTable.innerText = "To create the table first please add the titles to it in the order that you want them to be shown"; return */
+	table = document.div
+	heading = document.div // ? _createHeader(data.parent)
+	align = data.align
+	color = data.color
+
+	boxTable.addChild(table)
+	table.addChild(heading); table.setAttribute("id", "table_component")
+	heading.setAttribute("id", "heading_component")
+	/* // tableContainer = table
+	/* // tableHeading = heading
+	
+	/* TO STUDY : Object.keys(titles). => Object.assign // *
+  _createPagination (box, data, index, cb):
+	
+  _createPaginationFetching (data, parent):
+  _createBtnH (parent), 
+  _showLoading(), 
+  _closeLoading (parent, data, reload), 
+  _paintDataTable (data), 
+  _reloadTableDelete (dom, data, d), 
+  _changeVisorView (previous, next, id), 
+  _hexToRgbA (hex), 
+  _paintBtnSelected (name, id, parent, data), 
+  _openBoxShowUser(id), 
+  _closeBoxShowUser(user)
