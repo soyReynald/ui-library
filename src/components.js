@@ -37,14 +37,19 @@ class Components{
     }
     registryForm = {
         init(){
-            let formulary = document.querySelector(".registration")
-            loginArea.style.display.toggle("block")
+            let formulary = document.querySelector(".registration");
+            $(formulary).toggleClass("d-block");
         }
     }
     loginArea = {
         init(){
-            let loginArea = document.querySelector(".loginArea")
-            loginArea.style.display.toggle("block")
+            let loginArea = document.querySelector(".loginArea");
+            $(loginArea).toggleClass("d-block");
+        }
+    }
+    modal = {
+        init(){
+            $('#mainModal').modal();
         }
     }
 }
@@ -52,10 +57,9 @@ class Components{
 var componentsFilter = (parameter)=>{
     let component = new Components
     if(parameter.target.id == "getLightBox") component.lightBox.init()
-    if(parameter.target.id == "popup") component.popup.init()
+    if(parameter.target.id == "modal") component.modal.init()
     if(parameter.target.id == "table") component.table.init("#resources_container", 4, 8, ["Texto de ejemplo", "Texto de ejemplo para titulo", "titulo", "costo"], '', 'w3c')
     if(parameter.target.id == "image-rotator") component.imageRotator.init("imagesContainer")
     if(parameter.target.id == "registryForm") component.registryForm.init()
     if(parameter.target.id == "login") component.loginArea.init()
-    // NC: switch <-> instead of = if ,
 }

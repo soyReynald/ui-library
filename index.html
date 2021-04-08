@@ -4,6 +4,7 @@
     <title>Practices</title>
     <meta name="charset" content="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -18,7 +19,7 @@
         <menu>
             <button id="getLightBox" class="rsc-button">Lightbox with JavaScript</button>
             <button id="image-rotator" class="rsc-button">Image Rotator</button>
-            <button id="popup" class="rsc-button">Popup</button>
+            <button id="modal" class="rsc-button">Modal</button>
             <button id="table" class="rsc-button">Table</button>
             <button id="registryForm" class="rsc-button">Registration Form</button>
             <button id="login" class="rsc-button">Login Area</button>
@@ -64,18 +65,36 @@
             </form>
         </div>
     </main>
+    
+    <!-- External resources -->
+    <div class="modal" tabindex="-1" role="dialog" id="mainModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <script type="text/javascript">
         document.querySelector("*").onclick=ev=>{
             componentsFilter(ev)
         }
     </script>
-    <!-- Esto no es necesario
-    <script type="text/javascript" src="scripts/provider.js"></script>
-    <script type="text/javascript" src="src/route.js"></script>
-    -->
     <!--Scripts -->
     <script type="text/javascript" src="scripts/lightbox.js"></script>
-    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bundle.min.js"></script>
     <script type="text/javascript" src="scripts/image-rotator.js"></script>
     <script type="text/javascript" src="scripts/table.js"></script>
     <script type="text/javascript" src="scripts/formulary.js"></script>
